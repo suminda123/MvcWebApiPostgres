@@ -3,3 +3,8 @@ packages
 **/bin/Release/
 **/bin/Debug/
 **/obj/
+**/node_modules/
+**/node_modules
+**/bin
+**/obj
+**/Content/dist/
