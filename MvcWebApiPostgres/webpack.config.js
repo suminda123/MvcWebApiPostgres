@@ -16,12 +16,12 @@ module.exports = {
         new ExtractTextPlugin("site.css", { allChunks: true })
     ],
     resolve:{
-        extensions: ['','.js','.jsx']
+        extensions: ['','.js','.jsx', '.css', '.less', '.html']
     },
     module: {
         loaders: [
             {test: /\.jsx$/, exclude: /node_modules/, loaders: ["babel-loader"]},
-            {test: /\.css$/, exclude: /node_modules/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
+            {test: /\.css$/,  loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
             {test: /\.less$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")}
         ]
     }
