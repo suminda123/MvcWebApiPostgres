@@ -12,13 +12,17 @@ let Header = React.createClass({
         return (
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
-                    <Link to="app" className="navbar-brand">
-                       header image
-                    </Link>
-                    <ul className="nav navbar-nav">
-                        <li><Link to="app">Home</Link></li>
-                        <li><Link to="login">Login</Link></li>
-                    </ul>
+                    <div className="col-sm-2">
+                        <Link to="app" className="navbar-brand">
+                           header image
+                        </Link>
+                    </div>
+                    <div className="col-sm-10">
+                        <ul className="nav navbar-nav">
+                            <li><Link to="app">Home</Link></li>
+                            <li><Link to="login">Login</Link></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         );

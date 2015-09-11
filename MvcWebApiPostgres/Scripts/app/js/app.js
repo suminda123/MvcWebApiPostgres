@@ -15,10 +15,10 @@ let App = React.createClass({
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="container">
-                            <div className="header">
+                            <div className="col-sm-12 header">
                                 <HeaderHandler />
                             </div>
-                            <div>
+                            <div className="col-sm-12">
                                 <RouteHandler />
                             </div>
                         </div>
